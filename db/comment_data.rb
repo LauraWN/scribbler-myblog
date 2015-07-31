@@ -1,4 +1,4 @@
-def get_comment_data
+# def get_comment_data
   # comment_data = {
   #   "post1" => {
   #               date: "Yesterday",
@@ -13,5 +13,5 @@ def get_comment_data
   #               commenttext: "You stink!"
   #             }
   #   }
-  return comment_data
-end
+#   return comment_data
+# end
