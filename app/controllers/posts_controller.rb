@@ -2,7 +2,7 @@ class PostsController < ApplicationController
 
   def index
       @user = User.find(session[:user]["id"])
-      @posts = @user.posts
+      @comments = @user.comments
   end
 
   def new
