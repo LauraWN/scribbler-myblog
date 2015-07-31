@@ -16,12 +16,12 @@ Post.destroy_all
 comment_data = get_comment_data()
 post_data = get_post_data()
 
-comment_data.each_pair do |comment_name, comments|
+comment_data.each_pair do |post_title, comments|
   info = post_data[post_title]
   current_post = post.create!({
-    title:         info[:title],
+    title:   info[:title],
     date:    info[:date],
-    posttext:  info[:posttext]
+    posttext: info[:posttext]
   })
 
   comments.each do |comment|
